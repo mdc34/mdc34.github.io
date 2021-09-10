@@ -1,0 +1,160 @@
+
+html{
+  font-family: Apple Chancery, cursive;
+}
+
+.header{
+  text-align: center;
+  height: auto;
+  width: auto;
+  background: #3fff33;
+  padding: 0.7%;
+}
+
+
+body{
+  margin-top: 0;
+  margin-right: 0;
+  margin-left: 0;
+  width:100%;
+  /* margin:auto; */
+  min-width:600px;
+  max-width:2000px
+}
+
+
+}
+
+#logoTop{
+  margin: 1%;
+  border: 1px;
+}
+
+#navbar a:hover{
+  background-color: #f3ff33;
+}
+
+#navbar a:active{
+  background-color: #ffdd33;
+
+}
+
+#navbar{
+  background: #3fff33;
+  padding: 0.7%;
+  text-align: center;
+  z-index: 0;
+  /* display: flex; */
+	/* justify-content: space-between; */
+	/* align-items: center; */
+
+}
+
+
+nav li a{
+  text-decoration: none;
+  color: black;
+  padding:1.5%;
+  padding-left: 2%;
+  padding-right: 2%;
+  font-size: 20px;
+
+  /* margin: 1.5%; */
+}
+
+nav li {
+  list-style: none;
+  display: inline;
+  
+
+
+}
+
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 0;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+
+ /* #phHb1,#phHb2{
+  height: 4%;
+  width: 4%;
+  padding: 0;
+} */
+
+.content {
+  margin-top: 3%;
+  background: #f0eed9;
+  margin-left: 12%;
+  margin-right: 12%;
+  border: 2px solid #000000;
+  border-radius: 30px;
+  padding: 4%;
+  text-align: center;
+  z-index: 1;
+
+}
+
+
+body{
+  background-image: url('../Images/imageFondFloue.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+
+}
+
+
+h1{
+  font-style: italic;
+  /* text-decoration: underline; */
+}
+
+#mentionsLegales{
+  font-size: 80%;
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 1%;
+  color: black;
+
+}
+
+#mentionsLegales:hover{
+  text-decoration: underline;
+}
+
+
+.cRetour {
+  border-radius:30px;
+  border: 2px solid #000000;
+  padding:10px;
+  font-size:200%;
+  text-align:center;
+  color:black;
+  background:#f0eed9;
+  z-index:99999;
+  transition:all ease-in 0.2s;
+  position: fixed;
+  cursor: pointer;
+  bottom: 1em;
+  right: 20px;
+  display: none;
+}
+
+.cRetour:before{
+   content: "\261D";
+
+ }
+.cRetour:hover{
+  background:#ffdd33;
+  transition:all ease-in 0.2s;
+}
