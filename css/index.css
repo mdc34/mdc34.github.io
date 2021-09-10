@@ -65,7 +65,7 @@ nav li a{
 nav li {
   list-style: none;
   display: inline;
-  
+
 
 
 }
@@ -104,7 +104,7 @@ nav li {
 
 
 body{
-  background-image: url('../Images/imageFondFloue.jpg');
+  background-image: url('../images/imageFondFloue.jpg');
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
