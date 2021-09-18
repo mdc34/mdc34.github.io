@@ -1,6 +1,7 @@
 
 html{
   font-family: Apple Chancery, cursive;
+
 }
 
 .header{
@@ -13,13 +14,21 @@ html{
 
 
 body{
-  margin-top: 0;
-  margin-right: 0;
-  margin-left: 0;
-  width:100%;
+
+
   /* margin:auto; */
-  min-width:600px;
-  max-width:2000px
+
+  margin:0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background-image: url('../images/imageFondFloue.jpg');
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+
 }
 
 
@@ -103,14 +112,6 @@ nav li {
 }
 
 
-body{
-  background-image: url('../images/imageFondFloue.jpg');
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-
-}
 
 
 h1{
@@ -187,5 +188,7 @@ footer{
   position: relative;
   bottom: 0;
   width: 100%;
-  text-align: center;
+
+  /* height: 100%; */
+
 }
