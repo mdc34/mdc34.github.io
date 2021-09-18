@@ -158,3 +158,23 @@ h1{
   background:#ffdd33;
   transition:all ease-in 0.2s;
 }
+
+
+
+
+.conteneur
+{
+overflow: hidden;
+padding-bottom: 56.25%;
+position: relative;
+height: 0;
+}
+
+.conteneur iframe
+{
+left: 0;
+top: 0;
+height: 100%;
+width: 100%;
+position: absolute;
+}
