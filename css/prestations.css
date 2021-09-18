@@ -5,17 +5,14 @@ h2{
 
 
 
-#cso {
+#cso, #hb {
+
   height: 30%;
   width: 30%;
   margin: 1%;
 }
 
-#hb {
-  height: 30%;
-  width: 30%;
-  margin: 1%;
-}
+
 
 #ffe {
   height: 50%;
