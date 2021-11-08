@@ -8,7 +8,7 @@ html{
   text-align: center;
   height: auto;
   width: auto;
-  background: #3fff33;
+  background: rgba(61, 255, 51,0.8);
   padding: 0.7%;
 }
 
@@ -38,6 +38,7 @@ body{
 #logoTop{
   margin: 1%;
   border: 1px;
+
 }
 
 #navbar a:hover{
@@ -56,7 +57,7 @@ body{
 }
 
 #navbar{
-  background: #3fff33;
+  background: rgba(61, 255, 51,0.8);
   padding: 0.7%;
   text-align: center;
   z-index: 1000;
@@ -70,6 +71,8 @@ nav li a{
   padding-left: 2%;
   padding-right: 2%;
   font-size: 20px;
+  font-weight: bold;
+  font-style: italic;
 
   /* margin: 1.5%; */
 }
