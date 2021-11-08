@@ -46,7 +46,13 @@ body{
 
 #navbar a:active{
   background-color: #ffdd33;
+  border: 1px solid #000000;
+  border-radius: 10px;
+}
 
+#navbar a{
+
+  border-radius: 10px;
 }
 
 #navbar{
@@ -54,10 +60,6 @@ body{
   padding: 0.7%;
   text-align: center;
   z-index: 1000;
-  /* display: flex; */
-	/* justify-content: space-between; */
-	/* align-items: center; */
-
 }
 
 
