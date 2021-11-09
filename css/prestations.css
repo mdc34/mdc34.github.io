@@ -5,12 +5,7 @@ h2{
 
 
 
-#cso, #hb {
 
-  height: 30%;
-  width: 30%;
-  margin: 1%;
-}
 
 
 
@@ -20,36 +15,86 @@ h2{
   margin: 1%;
 }
 
-#babyPoneyImg{
-  height: 20%;
-  width: 20%;
-  margin: 2%;
-}
 
-#adulteImg, #csoImg {
+
+
+
+
+#cso, #hb {
+
   height: 30%;
   width: 30%;
-  margin: 2%;
-}
-
-#hbImg, #dressageImg, #cceImg, #boxImg, #paddockImg{
-  height: 35%;
-  width: 35%;
-  margin: 2%;
-}
-
-
-.babyPoney, .adulte,.ados, .horseball, .cso, .dressage, .cce, .pensionBox, .pensionPaddock{
-  display: inline-flex;
-}
-
-h5{
-writing-mode:vertical-rl;
--webkit-writing-mode: vertical-rl;
-
+  margin: 1%;
 }
 
 #tarifImg:hover{
   opacity: 0.7;
   transition:all ease-in 0.2s;
+}
+
+
+/* /////////////////////////////VERSION PC //////////////////////////////// */
+@media screen and (min-width:920.1px) {
+  .babyPoney, .adulte,.ados, .horseball, .cso, .dressage, .cce, .pensionBox, .pensionPaddock{
+    display: inline-flex;
+  }
+  h5{
+  writing-mode:vertical-rl;
+  -webkit-writing-mode: vertical-rl;
+  }
+
+
+  #babyPoneyImg{
+    max-width: 30%;
+    height: auto;
+    margin: 2%;
+  }
+
+  #adulteImg, #csoImg {
+
+    max-width: 30%;
+    height: auto;
+    margin: 2%;
+  }
+
+  #hbImg, #dressageImg, #cceImg, #boxImg, #paddockImg{
+
+    max-width: 35%;
+    height: auto;
+    margin: 2%;
+  }
+}
+/* //////////////////////////////VERSION MOBILE ////////////////////////// */
+
+@media screen and (max-width:920px){
+  .babyPoney, .adulte,.ados, .horseball, .cso, .dressage, .cce, .pensionBox, .pensionPaddock{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  h5{
+    text-decoration: underline;
+  }
+
+  #babyPoneyImg{
+    max-width: 40%;
+    min-width: 150px;
+    height: auto;
+    margin-top: 2%;
+  }
+
+  #adulteImg, #csoImg {
+    max-width: 50%;
+    min-width: 180px;
+    height: auto;
+    margin-top: 2%;
+  }
+
+  #hbImg, #dressageImg, #cceImg, #boxImg, #paddockImg{
+    max-width: 60%;
+    min-width: 180px;
+    height: auto;
+    margin-top: 2%;
+  }
+
 }
