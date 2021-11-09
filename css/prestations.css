@@ -35,7 +35,7 @@ h2{
 
 /* /////////////////////////////VERSION PC //////////////////////////////// */
 @media screen and (min-width:920.1px) {
-  .babyPoney, .adulte,.ados, .horseball, .cso, .dressage, .cce, .pensionBox, .pensionPaddock{
+  .babyPoney, .adulte,.ados, .horseball, .cso, .dressage, .cce, .pensionBox, .pensionPaddock, .ethologie{
     display: inline-flex;
   }
   h5{
@@ -50,14 +50,28 @@ h2{
     margin: 2%;
   }
 
-  #adulteImg, #csoImg {
-
-    max-width: 30%;
+ #csoImg {
+    max-width: 40%;
+    height: auto;
+    margin: 2%;
+  }
+  #cceImg{
+    max-width: 45%;
+    height: auto;
+    margin: 2%;
+  }
+  #adulteImg{
+    max-width: 40%;
     height: auto;
     margin: 2%;
   }
 
-  #hbImg, #dressageImg, #cceImg, #boxImg, #paddockImg{
+  #hbImg{
+    max-width: 30%;
+    height: auto;
+    margin: 2%;
+  }
+   #dressageImg,  #boxImg, #paddockImg,#ethologieImg,  #enfantsImg{
 
     max-width: 35%;
     height: auto;
@@ -67,7 +81,7 @@ h2{
 /* //////////////////////////////VERSION MOBILE ////////////////////////// */
 
 @media screen and (max-width:920px){
-  .babyPoney, .adulte,.ados, .horseball, .cso, .dressage, .cce, .pensionBox, .pensionPaddock{
+  .babyPoney, .adulte,.ados, .horseball, .cso, .dressage, .cce, .pensionBox, .pensionPaddock, .ethologie{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -77,20 +91,39 @@ h2{
   }
 
   #babyPoneyImg{
-    max-width: 40%;
-    min-width: 150px;
-    height: auto;
-    margin-top: 2%;
-  }
-
-  #adulteImg, #csoImg {
     max-width: 50%;
-    min-width: 180px;
+    min-width: 250px;
     height: auto;
     margin-top: 2%;
   }
 
-  #hbImg, #dressageImg, #cceImg, #boxImg, #paddockImg{
+  #adulteImg {
+    max-width: 55%;
+    min-width: 250px;
+    height: auto;
+    margin-top: 2%;
+  }
+
+   #csoImg{
+     max-width: 60%;
+     min-width: 250px;
+     height: auto;
+     margin-top: 2%;
+   }
+   #dressageImg{
+     max-width: 70%;
+     min-width: 250px;
+     height: auto;
+     margin-top: 2%;
+   }
+
+    #cceImg{
+      max-width: 70%;
+      min-width: 250px;
+      height: auto;
+      margin-top: 2%;
+    }
+  #hbImg,  #boxImg, #paddockImg, #ethologieImg, #enfantsImg{
     max-width: 60%;
     min-width: 180px;
     height: auto;
