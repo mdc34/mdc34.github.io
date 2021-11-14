@@ -1,0 +1,34 @@
+/* //////////////////////////////VERSION MOBILE ////////////////////////// */
+
+@media screen and (max-width:920px){
+    #JoncquiereImg, #GrabelsImg{
+      max-width: 50%;
+      min-width: 220px;
+      height: auto;
+      margin-top: 2%;
+    }
+}
+
+
+/* /////////////////////////////VERSION PC //////////////////////////////// */
+
+@media screen and (min-width:920.1px) {
+  #JoncquiereImg, #GrabelsImg{
+  max-width: 50%;
+  height: auto;
+  margin: 2%;
+  }
+}
+
+
+
+
+
+
+@media screen and (max-width:920px){
+  .actualiteContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
