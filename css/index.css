@@ -30,6 +30,10 @@ body{
 }
 
 
+#imageAccueil{
+  max-width: 60%;
+  height: auto;
+  margin: 2%;
 }
 
 #logoTop{
