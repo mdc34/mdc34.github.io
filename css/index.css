@@ -27,6 +27,9 @@ body{
 }
 
 @media screen and (min-width:920.1px) {
+  #bienEtre, #qualite{
+    margin-left: 45%;
+  }
 .slides {
     padding: 0;
     width: 609px;
@@ -143,6 +146,10 @@ input#img-6:checked ~ .nav-dots label#img-dot-6 {
 }
 }
 @media screen and (max-width:920px){
+
+  #bienEtre, #qualite{
+    max-height: 380px;
+  }
   .slides {
       padding: 0;
       max-width: 478px;
