@@ -48,6 +48,5 @@ setInterval(function () {
   id= "#img-"+numero;
   idPre= "#img-"+numeroPrecedent;
   document.querySelector(id).checked = true;
-  console.log("On vient de selectionner le suivant");
   document.querySelector(idPre).checked = false;
 }, 5000);
