@@ -1,13 +1,18 @@
 /* //////////////////////////////VERSION MOBILE ////////////////////////// */
 
 @media screen and (max-width:920px){
+
+    a{
+      text-decoration: underline;
+      font-style: italic;
+    }
     #JoncquiereImg, #GrabelsImg{
       max-width: 50%;
       min-width: 220px;
       height: auto;
       margin-top: 2%;
     }
-    #travauxImg1, #travauxImg2, #tombolaImg{
+    #travauxImg1, #travauxImg2, #tombolaImg,#lamotteImg{
       max-width: 40%;
       min-width: 220px;
       height: auto;
@@ -24,12 +29,21 @@
 /* /////////////////////////////VERSION PC //////////////////////////////// */
 
 @media screen and (min-width:920.1px) {
+  a{
+    text-decoration: none;
+    font-style: normal;
+    color: black;
+  }
+  a:hover{
+    text-decoration: underline;
+    font-style: italic;
+  }
   #JoncquiereImg, #GrabelsImg{
   max-width: 50%;
   height: auto;
   margin: 2%;
   }
-  #travauxImg1, #travauxImg2, #tombolaImg{
+  #travauxImg1, #travauxImg2, #tombolaImg,#lamotteImg{
     max-width: 40%;
     height: auto;
     margin: 2%;
