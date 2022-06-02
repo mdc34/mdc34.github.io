@@ -189,9 +189,7 @@ input#img-7:checked ~ .nav-dots label#img-dot-7 {
       height: 420px;
       display: block;
       position: absolute;
-
       transform: scale(0);
-
       transition: all .7s ease-in-out;
   }
 

@@ -12,10 +12,6 @@ function myFunctionSticky() {
 }
 
 
-
-
-
-
 jQuery(document).ready(function() {
   let duration = 500;
   jQuery(window).scroll(function() {
@@ -35,4 +31,23 @@ jQuery(document).ready(function() {
     jQuery('html, body').animate({scrollTop: 0}, duration);
     return false;
   })
+
 });
+
+let numero = 1;
+let numeroPrecedent = 7;
+
+setInterval(function () {
+  numero++;
+  if (numero > 7) {
+    numero = 1;
+    numeroPrecedent = 7;
+  }else{
+    numeroPrecedent = numero - 1;
+  }
+  id= "#img-"+numero;
+  idPre= "#img-"+numeroPrecedent;
+  document.querySelector(id).checked = true;
+  console.log("On vient de selectionner le suivant");
+  document.querySelector(idPre).checked = false;
+}, 5000);
