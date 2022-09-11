@@ -12,7 +12,7 @@
       height: auto;
       margin-top: 2%;
     }
-    #travauxImg1, #travauxImg2, #tombolaImg,#lamotteImg{
+    #travauxImg1, #travauxImg2, #tombolaImg,#lamotteImg,#LB_CSO2,#LB_CSO1{
       max-width: 40%;
       min-width: 220px;
       height: auto;
@@ -38,12 +38,12 @@
     text-decoration: underline;
     font-style: italic;
   }
-  #JoncquiereImg, #GrabelsImg{
+  #JoncquiereImg, #GrabelsImg, #LB_CSO2{
   max-width: 50%;
   height: auto;
   margin: 2%;
   }
-  #travauxImg1, #travauxImg2, #tombolaImg,#lamotteImg{
+  #travauxImg1, #travauxImg2, #tombolaImg,#lamotteImg,#LB_CSO1{
     max-width: 40%;
     height: auto;
     margin: 2%;
