@@ -12,6 +12,12 @@
       height: auto;
       margin-top: 2%;
     }
+    #ch_noel, #stages_noel{
+      max-width: 100%;
+      min-width: 220px;
+      height: auto;
+      margin-top: 2%;
+    }
     #travauxImg1, #travauxImg2, #tombolaImg,#lamotteImg,#LB_CSO2,#LB_CSO1{
       max-width: 40%;
       min-width: 220px;
@@ -38,7 +44,7 @@
     text-decoration: underline;
     font-style: italic;
   }
-  #JoncquiereImg, #GrabelsImg, #LB_CSO2{
+  #JoncquiereImg, #GrabelsImg, #LB_CSO2, #ch_noel, #stages_noel{
   max-width: 50%;
   height: auto;
   margin: 2%;
