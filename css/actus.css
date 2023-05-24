@@ -6,19 +6,19 @@
       text-decoration: underline;
       font-style: italic;
     }
-    #JoncquiereImg, #GrabelsImg{
+    #JoncquiereImg, #GrabelsImg, #lamotte2023{
       max-width: 50%;
       min-width: 220px;
       height: auto;
       margin-top: 2%;
     }
-    #ch_noel, #stages_noel{
+    #ch_noel, #stages_noel, #stages_ete{
       max-width: 100%;
       min-width: 220px;
       height: auto;
       margin-top: 2%;
     }
-    #travauxImg1, #travauxImg2, #tombolaImg,#lamotteImg,#LB_CSO2,#LB_CSO1{
+    #travauxImg1, #travauxImg2, #tombolaImg,#lamotteImg,#LB_CSO2,#LB_CSO1, #fete_club2023{
       max-width: 40%;
       min-width: 220px;
       height: auto;
@@ -44,12 +44,12 @@
     text-decoration: underline;
     font-style: italic;
   }
-  #JoncquiereImg, #GrabelsImg, #LB_CSO2, #ch_noel, #stages_noel{
+  #JoncquiereImg, #GrabelsImg, #LB_CSO2, #ch_noel, #stages_noel, #lamotte2023, #stages_ete{
   max-width: 50%;
   height: auto;
   margin: 2%;
   }
-  #travauxImg1, #travauxImg2, #tombolaImg,#lamotteImg,#LB_CSO1{
+  #travauxImg1, #travauxImg2, #tombolaImg,#lamotteImg,#LB_CSO1, #fete_club2023{
     max-width: 40%;
     height: auto;
     margin: 2%;
