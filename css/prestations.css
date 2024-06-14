@@ -2,23 +2,11 @@ h2{
   text-decoration: underline;
 }
 
-
-
-
-
-
-
-
 #ffe {
   height: 50%;
   width: 30%;
   margin: 1%;
 }
-
-
-
-
-
 
 #cso, #hb {
 
@@ -44,11 +32,11 @@ h2{
 
 /* /////////////////////////////VERSION PC //////////////////////////////// */
 @media screen and (min-width:920.1px) {
-  .babyPoney, .adulte,.ados, .horseball,.julien, .cso, .dressage, .cce, .pensionBox, .pensionPaddock, .ethologie, .rando, .marjorie,.jade{
+  .babyPoney, .adulte,.ados, .horseball,.julien, .cso, .dressage, .cce, .pensionBox, .pensionPaddock, .ethologie, .rando, .faustine{
     display: inline-flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
   }
   h5{
   writing-mode:vertical-rl;
@@ -83,9 +71,13 @@ h2{
     height: auto;
     margin: 2%;
   }
-   #dressageImg,#julienImg,  #boxImg,#marjorieImg, #paddockImg,#ethologieImg,  #enfantsImg, #randoImg,#jadeImg{
-
+   #dressageImg, #julienImg,  #boxImg, #paddockImg,#ethologieImg,  #enfantsImg, #randoImg{
     max-width: 35%;
+    height: auto;
+    margin: 2%;
+  }
+  #faustineImg {
+    max-width: 20%;
     height: auto;
     margin: 2%;
   }
@@ -95,7 +87,7 @@ h2{
 /* //////////////////////////////VERSION MOBILE ////////////////////////// */
 
 @media screen and (max-width:920px){
-  .babyPoney, .adulte,.ados, .horseball, .cso, .dressage, .cce, .pensionBox,.julien, .pensionPaddock, .ethologie, .rando,.marjorie, .jade{
+  .babyPoney, .adulte,.ados, .horseball, .cso, .dressage, .cce, .pensionBox,.julien, .pensionPaddock, .ethologie, .rando,.faustine{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -137,7 +129,7 @@ h2{
       height: auto;
       margin-top: 2%;
     }
-  #hbImg,#julienImg,#marjorieImg,  #boxImg, #paddockImg, #ethologieImg, #enfantsImg, #randoImg,#jadeImg{
+  #hbImg,#julienImg,  #boxImg, #paddockImg, #ethologieImg, #enfantsImg, #randoImg, #faustineImg{
     max-width: 60%;
     min-width: 180px;
     height: auto;
