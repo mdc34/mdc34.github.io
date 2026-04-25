@@ -1,189 +1,270 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width" />
-    <meta name="title" content="Accueil | Centre équestre du Mas de Cournon - 34380 Argelliers">
-    <link rel = "icon" href = "images/favicon.ico" type = "image/x-icon">
-    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
-    <meta name="description" content="Découvrez le centre équestre du Mas de Cournon. Situé à 25 min au Nord de Montpellier (34), venez découvrir l'équitation dans un cadre convivial. Balade, cours, pension au Centre équestre du Mas de Cournon. Cours pour les petits comme pour les grands, à tout niveaux et dans plusieurs disciplines(horse-ball, cso, cce,voltige...).">
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Centre Équestre du Mas de Cournon</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<script>
+  var PLACEHOLDER_SVG = "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='400' viewBox='0 0 600 400'%3E%3Crect fill='%23e8f5e9' width='600' height='400'/%3E%3Ccircle cx='300' cy='180' r='60' fill='%234caf50' opacity='.3'/%3E%3Ctext x='50%25' y='62%25' dominant-baseline='middle' text-anchor='middle' font-size='16' font-family='sans-serif' fill='%232e7d32'%3EImage non disponible%3C/text%3E%3C/svg%3E";
+</script>
 
 
+<header>
+  <span class="logo-badge"><i class="fa-solid fa-horse" aria-hidden="true"></i> Depuis 2005</span>
+  <h1>Centre Équestre du Mas de Cournon</h1>
+  <p>Passion • Nature • Équitation</p>
+</header>
 
-    <title>Centre équestre du Mas de Cournon | Accueil - 34380 Argelliers</title>
-    <link rel="stylesheet" href="css/index.css">
-    <link rel="canonical" href="https://www.masdecournon.fr/" />
+<nav>
+  <a onclick="showSection('home')" class="active" data-section="home">Accueil</a>
+  <a onclick="showSection('services')" data-section="services">Prestations</a>
+  <a onclick="showSection('news')" data-section="news">Actualités</a>
+  <a onclick="showSection('contact')" data-section="contact">Contact</a>
+</nav>
 
-  </head>
-  <body>
+<!-- ===================== ACCUEIL ===================== -->
+<section id="home" class="active">
+  <h2>Bienvenue</h2>
+  <p class="section-intro">Découvrez notre centre équestre et partagez notre passion du cheval dans un cadre naturel exceptionnel.</p>
 
-
-      <div class="header">
-        <a href="#"><img src="images/mdc.png" alt="" id="logoTop" border="1" ></a>
+  <div class="hero-content">
+    <div class="hero-text">
+      <h3>Qui sommes-nous ?</h3>
+      <p>Le Centre Equestre du Mas de Cournon vous accueille tous les jours de l’année dans un cadre chaleureux à 25min au Nord de Montpellier (34).</p>
+      <p>Que vous ayez l’envie d’apprendre, le besoin de vous ressourcer, l’esprit de compétition ou la passion de randonner, vous êtes les bienvenus !!
+Deux moniteurs diplômés BPJEPS, une stagiaire/apprentie BPJEPS et une animatrice poneys sont présents toute l’année pour vous accompagner dans le milieu équestre et vous faire partager leur passion, leurs connaissances et expériences… Vous pourrez profiter des infrastructures que nous mettons à votre disposition, soit 2 carrières , un manège couvert entièrement et un cross possédant une piste de galop. Le projet d’un nouveau manège avec toiture photovoltaïque est en cours. Les possibilités de balades et/ou randonnées sont nombreuses vu la diversité des GR à disposition et tous les sites touristiques qui entourent notre coin de paradis…</p>
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a class="btn" onclick="showSection('services')">Nos prestations</a>
+        <a class="btn btn-outline" onclick="showSection('contact')">Nous contacter</a>
       </div>
+    </div>
+    <div class="hero-image" onclick="openLightbox('images/mdc.png')">
+      <img src="images/mdc.png" alt="Centre équestre" onerror="this.src=PLACEHOLDER_SVG">
+    </div>
+  </div>
 
-      <div id="navbar">
-        <nav>
-          <ul>
+  <div class="features">
+    <div class="feature">
+      <div class="feature-icon"><i class="fa-solid fa-ribbon" aria-hidden="true"></i></div>
+      <h4>Moniteurs diplômés</h4>
+      <p>Une équipe passionnée à votre écoute</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon"><i class="fa-solid fa-tree" aria-hidden="true"></i></div>
+      <h4>Cadre naturel</h4>
+      <p>50 hectares de forêts et chemins</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon"><i class="fa-solid fa-horse" aria-hidden="true"></i></div>
+      <h4>30 chevaux</h4>
+      <p>Chevaux et poneys pour tous niveaux</p>
+    </div>
+  </div>
+</section>
 
-            <div class="nav">
+<!-- ===================== PRESTATIONS ===================== -->
+<section id="services">
+  <h2>Nos Prestations</h2>
+  <p class="section-intro">Du premier contact avec le poney jusqu'à la compétition, nous proposons des formules adaptées à chaque cavalier.</p>
 
-              <li><a href="index.html" id="Home" >Home</a></li>
-              <li><a href="html/prestations.html" id="Prest" >Prestations</a></li>
-              <li><a href="html/actus.html" id="Actus">Actualités</a></li>
-              <li><a href="html/contact.html" id="Contact">Contact</a></li>
+  <div class="grid">
 
-            </div>
-
-          </ul>
-        </nav>
+    <div class="card" onclick="openLightbox('images/services/cours.jpg')">
+      <div class="card-image">
+        <img src="images/services/cours.jpg" alt="Cours d'équitation"
+             onerror="this.src=PLACEHOLDER_SVG">
       </div>
+      <div class="card-content">
+        <span class="card-tag">Populaire</span>
+        <h3>Cours d'équitation</h3>
+        <p>Du débutant au cavalier confirmé. Cours collectifs ou particuliers, du galop 1 au galop 7. Tous âges à partir de 3 ans.</p>
+      </div>
+    </div>
 
+    <div class="card" onclick="openLightbox('images/services/balades.jpg')">
+      <div class="card-image">
+        <img src="images/services/balades.jpg" alt="Balades"
+             onerror="this.src=PLACEHOLDER_SVG">
+      </div>
+      <div class="card-content">
+        <span class="card-tag">Nature</span>
+        <h3>Balades / Randonnées</h3>
+        <p>Notre petit coin de paradis nous offre des sites incroyables avec des vues imprenables!! Nos facilités d’accès aux chemins nous permettent des jolies balades et la possibilité d’atteindre la rivière en une petite heure!! Nous organisons à la demande des balades d’une heure ou deux et nous organisons des randonnées d’une à plusieurs journées lors des vacances scolaires !!!</p>
+      </div>
+    </div>
 
+    <div class="card" onclick="openLightbox('images/services/box.jpg')">
+      <div class="card-image">
+        <img src="images/services/box.jpg" alt="Pension"
+             onerror="this.src=PLACEHOLDER_SVG">
+      </div>
+      <div class="card-content">
+        <span class="card-tag">Pension</span>
+        <h3>Pension équine</h3>
+        <p>Accueil de vos chevaux toute l'année. Box, paddock (avec ou sans abris) ou pré. Des arbres pour l'ombre en été, et sans pour le soleil l'hiver. Granulés tous les midis.</p>
+      </div>
+    </div>
 
-        <div class="content" >
+    <div class="card" onclick="openLightbox('images/services/vacances.jpg')">
+      <div class="card-image">
+        <img src="images/services/vacances.jpg" alt="Stages"
+             onerror="this.src=PLACEHOLDER_SVG">
+      </div>
+      <div class="card-content">
+        <span class="card-tag">Vacances</span>
+        <h3>Stages vacances</h3>
+        <p>Stages d'une semaine pendant les vacances scolaires. Immersion complète dans l'univers du cheval.</p>
+      </div>
+    </div>
 
+    <div class="card" onclick="openLightbox('images/services/hb.jpg')">
+      <div class="card-image">
+        <img src="images/services/hb.jpg" alt="Compétition"
+             onerror="this.src=PLACEHOLDER_SVG">
+      </div>
+      <div class="card-content">
+        <span class="card-tag">Sport</span>
+        <h3>Horse-Ball</h3>
+        <p>Que vous soyez novice ou aguerri, nous vous proposons la pratique de ce sport spectaculaire dès le plus jeune âge, que ce soit en loisir ou en compétition (avec, pour les plus déterminés, une potentielle médaille aux championnats de France) !</p>
+      </div>
+    </div>
 
+    <div class="card" onclick="openLightbox('images/services/cso.jpg')">
+      <div class="card-image">
+        <img src="images/services/cso.jpg" alt="Compétition"
+             onerror="this.src=PLACEHOLDER_SVG">
+      </div>
+      <div class="card-content">
+        <span class="card-tag">Sport</span>
+        <h3>CSO</h3>
+        <p>Le CSO est l’une des disciplines équestres la plus pratiquée à travers le monde et nous vous offrons la possibilité de l’exploiter et ce, en toute sérénité. Que ce soit pour le plaisir, la simple envie de sensations, et/ou pour de la compétition Club jusqu’en Amateur, le MDC vous amènera jusqu’à vos envies et vos espérances.</p>
+      </div>
+    </div>
 
-          <h1>Bienvenue au centre équestre du Mas de Cournon !!</h1>
+  </div>
+</section>
 
-          <div class="body">
+<!-- ===================== ACTUALITÉS ===================== -->
+<section id="news">
+  <h2>Actualités</h2>
+  <p class="section-intro">Restez informés des événements et nouveautés du centre équestre.</p>
+  <!-- Les cartes sont générées automatiquement depuis data/actualites.js -->
+  <div class="grid" id="news-grid"></div>
+</section>
 
-            <ul class="custom-slides">
-        <input type="radio" name="radio-btn" id="img-1" checked />
-        <li class="custom-slide-container">
-    		<div class="custom-slide">
-    			<img src="images/mas_de_cournon.jpg" />
-            </div>
-    		<div class="nav">
-    			<label for="img-7" class="prev">&#x2039;</label>
-    			<label for="img-2" class="next">&#x203a;</label>
-    		</div>
-        </li>
+<!-- ===================== CONTACT ===================== -->
+<section id="contact">
+  <h2>Contact</h2>
+  <p class="section-intro">Une question ? N'hésitez pas à nous contacter, nous vous répondrons dans les plus brefs délais.</p>
 
-        <input type="radio" name="radio-btn" id="img-2" />
-        <li class="custom-slide-container">
-            <div class="custom-slide">
-              <img src="images/ffe.jpg" />
-            </div>
-    		<div class="nav">
-    			<label for="img-1" class="prev">&#x2039;</label>
-    			<label for="img-3" class="next">&#x203a;</label>
-    		</div>
-        </li>
-
-        <input type="radio" name="radio-btn" id="img-3" />
-        <li class="custom-slide-container">
-            <div class="custom-slide">
-              <img src="images/fullLabel.jpeg" />
-            </div>
-    		<div class="nav">
-    			<label for="img-2" class="prev">&#x2039;</label>
-    			<label for="img-4" class="next">&#x203a;</label>
-    		</div>
-        </li>
-
-        <input type="radio" name="radio-btn" id="img-4" />
-        <li class="custom-slide-container">
-            <div class="custom-slide">
-              <img src="images/labelQualite.jpeg" />
-            </div>
-    		<div class="nav">
-    			<label for="img-3" class="prev">&#x2039;</label>
-    			<label for="img-5" class="next">&#x203a;</label>
-    		</div>
-        </li>
-
-        <input type="radio" name="radio-btn" id="img-5" />
-        <li class="custom-slide-container">
-            <div class="custom-slide">
-              <img src="images/bienEtreAnimal.JPG" id="bienEtre" />
-            </div>
-    		<div class="nav">
-    			<label for="img-4" class="prev">&#x2039;</label>
-    			<label for="img-6" class="next">&#x203a;</label>
-    		</div>
-        </li>
-
-        <input type="radio" name="radio-btn" id="img-6" />
-        <li class="custom-slide-container">
-            <div class="custom-slide">
-              <img src="images/qualite.jpeg" id="qualite"/>
-            </div>
-    		<div class="nav">
-    			<label for="img-5" class="prev">&#x2039;</label>
-    			<label for="img-7" class="next">&#x203a;</label>
-    		</div>
-        </li>
-
-        <input type="radio" name="radio-btn" id="img-7" />
-        <li class="custom-slide-container">
-            <div class="custom-slide">
-              <img src="images/lamotte-results.jpg" id="lamotte"/>
-            </div>
-    		<div class="nav">
-    			<label for="img-6" class="prev">&#x2039;</label>
-    			<label for="img-1" class="next">&#x203a;</label>
-    		</div>
-        </li>
-
-        <li class="nav-dots">
-          <label for="img-1" class="nav-dot" id="img-dot-1"></label>
-          <label for="img-2" class="nav-dot" id="img-dot-2"></label>
-          <label for="img-3" class="nav-dot" id="img-dot-3"></label>
-          <label for="img-4" class="nav-dot" id="img-dot-4"></label>
-          <label for="img-5" class="nav-dot" id="img-dot-5"></label>
-          <label for="img-6" class="nav-dot" id="img-dot-6"></label>
-          <label for="img-7" class="nav-dot" id="img-dot-7"></label>
-        </li>
-    </ul>
-
-          <h1>Qui sommes-nous ?</h1>
-          <br>
-          <p>
-          Le Centre Equestre du Mas de Cournon vous accueille tous les jours de l’année dans un
-          cadre chaleureux à 25min au Nord de Montpellier (34).
-          <br><br>
-          Que vous ayez l’envie d’apprendre, le besoin de vous ressourcer, l’esprit de compétition
-          ou la passion de randonner, vous êtes les bienvenus !!
-          <br>
-          Deux moniteurs diplômés BPJEPS, une stagiaire/apprentie BPJEPS et une animatrice
-          poneys sont présents toute l’année pour vous accompagner dans le milieu équestre et
-          vous faire partager leur passion, leurs connaissances et expériences…
-          Vous pourrez profiter des infrastructures que nous mettons à votre disposition, soit 2
-          carrières , un manège couvert entièrement et un cross possédant une piste de galop.
-          Le projet d’un nouveau manège avec toiture photovoltaïque est en cours.
-          Les possibilités de balades et/ou randonnées sont nombreuses vu la diversité des GR à
-          disposition et tous les sites touristiques qui entourent notre coin de paradis…
-            <br>
-            <br>
-            Si vous voulez nous connaître un peu plus, continuez la visite du site… A tout de suite
-            &#128513; </p>
-
-
-            <br><br><br><br><br>
-
-
-
-
-            <h1>Visite Aerienne</h1>
-
-            <div class="conteneur">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/FznMnFmJU9g?rel=0&controls=2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-
-            </div>
-
-
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h3>Nos coordonnées</h3>
+      <div class="contact-item">
+        <span><i class="fa-solid fa-location-dot" aria-hidden="true"></i></span>
+        <div>
+          <strong>Adresse</strong><br>
+          Mas de Cournon<br>
+          34380 Argelliers, France
         </div>
-
-        <div class="cRetour"></div>
       </div>
+      <div class="contact-item">
+        <span><i class="fa-solid fa-phone" aria-hidden="true"></i></span>
+        <div>
+          <strong>Téléphone</strong><br>
+          <a href="tel:+33665301197">06 65 30 11 97</a> <br>
+          <a href="tel:+33679675931">06 79 67 59 31</a> 
+        </div>
+      </div>
+      <div class="contact-item">
+        <span><i class="fa-solid fa-envelope" aria-hidden="true"></i></span>
+        <div>
+          <strong>Email</strong><br>
+          <a href="mailto:mas.cournon@gmail.com">mas.cournon@gmail.com</a>
+        </div>
+      </div>
+      <div class="contact-item">
+        <span><i class="fa-solid fa-clock" aria-hidden="true"></i></span>
+        <div>
+          <strong>Horaires</strong><br>
+          Lundi - Dimanche : 9h30 - 18h<br>
+          7j/7 toute l'année
+        </div>
+      </div>
+    </div>
 
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-      <script src="js/index.js" charset="utf-8"></script>
-      <script src="https://kit.fontawesome.com/45e38e596f.js" crossorigin="anonymous"></script>
+    <div>
+      <h3 style="color: var(--green-dark); margin-bottom: 1.5rem;">Envoyez-nous un message</h3>
+      <form class="contact-form" action="mailto:mas.cournon@gmail.com" method="post" enctype="text/plain">
+        <div class="form-group">
+          <input type="text" name="Nom" placeholder="Votre nom" required>
+        </div>
+        <div class="form-group">
+          <input type="email" name="Email" placeholder="Votre email" required>
+        </div>
+        <div class="form-group">
+          <input type="tel" name="Telephone" placeholder="Votre téléphone (optionnel)">
+        </div>
+        <div class="form-group">
+          <textarea name="Message" placeholder="Votre message" required></textarea>
+        </div>
+        <button class="btn" type="submit">Envoyer le message</button>
+      </form>
+    </div>
+  </div>
+</section>
 
-      <footer><a id="mentionsLegales" href="html/mentions.html" style="">&copy <script>document.write( new Date().getUTCFullYear() );</script>  Mas De Cournon | Mentions légales</a></footer>
+<footer>
+  <p><strong>Centre Équestre du Mas de Cournon</strong></p>
+  <p>&copy <script>document.write( new Date().getUTCFullYear() );</script> Tous droits réservés</p>
+  <div class="footer-links">
+    <a href="mentions.html">Mentions légales</a>
+    <a href="https://www.facebook.com/pg/masdecournon/posts/">Facebook</a>
+    <a href="https://www.instagram.com/masdecournon/">Instagram</a>
+  </div>
+</footer>
 
-  </body>
+<!-- ===================== LIGHTBOX IMAGE ===================== -->
+<div class="lightbox" id="lightbox" onclick="closeLightboxOverlay(event)">
+  <div class="lightbox-content">
+    <span class="lightbox-close" onclick="closeAllLightboxes()">x</span>
+    <button class="lb-nav lb-prev" onclick="lbNav(-1)">&#8249;</button>
+    <img id="lightbox-img" src="" alt="Image agrandie">
+    <button class="lb-nav lb-next" onclick="lbNav(1)">&#8250;</button>
+    <div class="lb-counter" id="lb-counter"></div>
+  </div>
+</div>
+
+<!-- ===================== LIGHTBOX ACTUALITÉ ===================== -->
+<div class="lightbox" id="lightbox-news" onclick="closeLightboxOverlay(event)">
+  <div class="lightbox-content lightbox-news" onclick="event.stopPropagation()">
+    <span class="lightbox-close" onclick="closeAllLightboxes()">x</span>
+
+    <!-- Galerie photos dans la lightbox actualité -->
+    <div class="lb-news-gallery" id="lb-news-gallery">
+      <button class="lb-nav lb-prev" onclick="lbNewsNav(-1)">&#8249;</button>
+      <img id="lightbox-news-img" src="" alt="">
+      <button class="lb-nav lb-next" onclick="lbNewsNav(1)">&#8250;</button>
+      <div class="lb-counter" id="lb-news-counter"></div>
+    </div>
+
+    <div class="lightbox-news-content">
+      <p class="card-date" id="lightbox-news-date"></p>
+      <h3 id="lightbox-news-title"></h3>
+      <p id="lightbox-news-text" style="margin-top: 1rem; line-height: 1.8;"></p>
+    </div>
+  </div>
+</div>
+
+<!-- Scripts -->
+<script src="data/actualites.js"></script>
+<script src="js/main.js"></script>
+
+</body>
 </html>
